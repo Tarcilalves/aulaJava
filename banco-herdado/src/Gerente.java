@@ -17,9 +17,9 @@ public class Gerente extends funcionario {
 	 
 	
 
-//	 public double getBonificacao() {
-//        return this.salario;
-//     }
+	 public double getBonificacao() {
+		 return super.getBonificacao() + super.getSalario(); // super - quer dizer, que está categoria não está definido nessa classe
+    }
 	 
 }
 	 

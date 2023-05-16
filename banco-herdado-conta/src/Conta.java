@@ -18,11 +18,11 @@ public class Conta {
         System.out.println("Estou criando uma conta " + this.numero);
     }
 
-    public void deposita(double valor) {
+    public void deposito(double valor) {
         this.saldo = this.saldo + valor;
     }
 
-    public boolean saca(double valor) {
+    public boolean saque(double valor) {
         if(this.saldo >= valor) {
             this.saldo -= valor;
             return true;
@@ -32,8 +32,8 @@ public class Conta {
     }
 
     public boolean transfere(double valor, Conta destino) {
-        if(this.saca(valor)) {
-                destino.deposita(valor);
+        if(this.saque(valor)) {
+                destino.deposito(valor);
                 return true;
         } else {
                 return false;

@@ -2,3 +2,7 @@
 /Conta.class
 /ContaCorrente.class
 /ContaPoupanca.class
+/Tributavel.class
+/CalculadorDeImposto.class
+/SeguroDevida.class
+/TesteTributaveis.class

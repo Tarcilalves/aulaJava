@@ -6,7 +6,8 @@ public class Admisnistrador extends Funcionario implements Autenticavel {
 	public Admisnistrador() {
 		 this.autenticador = new AutenticacaoUtil();
 	}
-    public double getBonificacao() {
+
+	public double getBonificacao() {
         System.out.println("Chamando o metodo de bonificacao do GERENTE");
         return super.getSalario();
     }

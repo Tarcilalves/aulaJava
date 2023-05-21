@@ -11,7 +11,11 @@ public class TesteConexao {
 		        System.out.println("Deu erro na conexao");
 		        con.fecha();
 		    }finally {
-		    	con.fecha();
+		    	
+		    	 if(con != null) {
+		             con.fecha();
+		         }
+		    	
 				
 			}
 

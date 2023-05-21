@@ -3,6 +3,7 @@ public class Conexao {
 
     public Conexao() {
         System.out.println("Abrindo conexao");
+        throw new IllegalStateException();
     }
 
     public void leDados() {

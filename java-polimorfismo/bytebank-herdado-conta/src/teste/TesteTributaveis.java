@@ -1,14 +1,15 @@
+package teste;
 
 public class TesteTributaveis {
 
     public static void main(String[] args) {
 
-        ContaCorrente cc = new ContaCorrente(222, 333);
+        modelo.ContaCorrente cc = new modelo.ContaCorrente(222, 333);
         cc.deposita(100.0);
 
-        SeguroDevida seguro = new SeguroDevida();
+        modelo.SeguroDevida seguro = new modelo.SeguroDevida();
 
-        CalculadorDeImposto calc = new CalculadorDeImposto();
+        modelo.CalculadorDeImposto calc = new modelo.CalculadorDeImposto();
         calc.registra(cc);
         calc.registra(seguro);
 

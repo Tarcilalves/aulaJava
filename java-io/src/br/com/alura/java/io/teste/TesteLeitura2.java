@@ -18,7 +18,7 @@ public class TesteLeitura2 {
              
              Scanner linhaScanner = new Scanner(linha);
              linhaScanner.useLocale(Locale.US);
-             linhaScanner.useDelimiter(",");
+             linhaScanner.useDelimiter(",");// separador de conteúdo
              
 
              String valor1 = linhaScanner.next();
